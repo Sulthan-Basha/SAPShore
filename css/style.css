@@ -1,0 +1,331 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif; font-weight:400;
+}
+a, button {
+  font-family: 'Ubuntu', sans-serif; outline:none;
+}
+body {
+  background-image:url('../images/banner.jpg'); background-repeat:no-repeat; background-size:cover; background-attachment:fixed;
+}
+.btn-main {
+  background-color:#4056a1; color:#fff; border:none; border-radius:4px; padding:7px 20px;
+}
+.navbar-expand-md {
+  position:fixed; width:100%; top:0; z-index:9999;
+}
+
+.navbar-brand h3{
+  color:#4056a1; font-weight:500;font-family: 'Baloo Bhaijaan', cursive; font-size:38px;
+}
+#collapsibleNavbar .nav-item a {
+  color:#4056a1; font-size:16px; margin-right:40px; padding:5px 15px;
+}
+.Services {
+  overflow:hidden; background-color:#fff; padding:70px 0; width:100%;
+}
+.AboutUs {
+  overflow:hidden; background-color:#fff; padding:120px 0; margin-top:100px; width:100%;
+}
+
+.ContactUs {
+  overflow:hidden; background-color:#fff; padding:70px 0; width:100%;
+}
+
+.serviceBox{
+    padding: 35px 20px 35px 90px;
+    position: relative;
+}
+.serviceBox:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px 0 rgba(119, 94, 28, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale3d(1.08, 1.08, 1.08);
+    transition: all 0.33s ease 0s;
+}
+.serviceBox:hover:before{
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+.serviceBox .service-icon{
+    width: 50px;
+    height: 60px;
+    line-height: 35px;
+    font-size: 30px;
+    color: #4056a1;
+    text-align: center;
+    border: 2px solid #4056a1;
+    position: absolute;
+    top: 55px; padding:10px 5px 5px;
+    left: 20px;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon{ transform: translateY(20px); }
+.serviceBox .service-icon:before,
+.serviceBox .service-icon:after{
+    content: "";
+    height: 2px;
+    background: #4056a1;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    right: 10px;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox .service-icon:after{
+    top: auto;
+    bottom: -20px;
+    left: 10px;
+    right: 10px;
+}
+.serviceBox:hover .service-icon:before{
+    top: -25px;
+    transform: rotate(90deg);
+}
+.serviceBox:hover .service-icon:after{
+    transform: rotate(-90deg);
+    bottom: -25px;
+}
+.serviceBox .title{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333; line-height:25px;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    position: relative;
+}
+.serviceBox .description{
+    font-size: 13px;
+    color: #000;
+    line-height: 25px;
+    letter-spacing: 1px; text-align:left;
+    margin: 0;
+}
+@media only screen and (max-width:990px){
+    .serviceBox{ margin-bottom: 30px; }
+}
+@media only screen and (max-width:767px){
+    .serviceBox:before{ transform: scale3d(1, 1, 1); }
+    .serviceBox .service-icon{ top: 30px; }
+}
+@media only screen and (max-width:480px){
+    .serviceBox .service-icon{ top: 40px; }
+}
+.fixed-top {
+   background-color:#fff; transition:all .5s cubic-bezier(0.5, 0, 0.1, 1); padding:3px; box-shadow:0 0 10px 2px #ccc;
+}
+.fixed-top .navbar-brand {
+  width:180px;
+}
+.Services h3{
+    color:#4056a1; font-weight:600;
+}
+.AboutUs h3{
+    color:#4056a1; font-weight:600; margin:30px 0 30px;
+}
+
+.ContactUs h3{
+    color:#4056a1; font-weight:600; margin:10px 0 50px;
+}
+.hline::before,
+.hline::after {
+    display: inline-block;
+    content: "";
+    border-top: 3px solid #4056a1;
+    width: 50px;
+    margin: 0 15px;
+    transform: translateY(-8px);
+}
+.CallToActionBtn {
+  background-color:rgba(0, 0, 0, 0.6); padding:50px 0;
+}
+.CallToActionBtn h5 {
+  color:#fff; font-weight:500; line-height:30px;
+}
+
+.hovereffect {color:#fff;background:transparent;border-width:2px;border-style: solid;border-color: #fff;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+font-weight:bold}
+.hovereffect:before, .hovereffect:after {content:'';display:block;position:absolute;border-color:#fff;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
+.hovereffect:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+.hovereffect:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+.hovereffect:hover:before, .hovereffect:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#fff}
+.hovereffect:hover {color:#4056a1;background-color:#fff;border-color:#fff}
+/* Services CSS */
+
+.serviceBox2{
+    padding: 50px 35px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-bottom-color: #4056a1;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease 0s; margin-bottom:30px;
+}
+.serviceBox2:hover{ border: 1px solid #4056a1; }
+.serviceBox2:before,
+.serviceBox2:after{
+    content: "";
+    width: 70%;
+    height: 5px;
+    background: #4056a1;
+    opacity: 0;
+    position: absolute;
+    top: -3px;
+    left: 35%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease 0s;
+}
+.serviceBox2:hover:before,
+.serviceBox2:hover:after{
+    opacity: 1;
+    left: 50%;
+}
+.serviceBox2:after{
+    top: auto;
+    bottom: -3px;
+}
+.serviceBox2 .service-icon2{
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    background: #4056a1;
+    margin: 0 auto 20px;
+    font-size: 36px;
+    color: #fff;
+}
+.serviceBox2 .title2{
+    font-size: 19px;
+    font-weight: 600;
+    color: #4056a1;
+    margin: 0 0 10px 0;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox2:hover .title2{ opacity: 0; }
+.serviceBox2 .description2{
+    font-size: 15px;
+    color: #7a7a7a;
+    line-height: 25px;
+    margin: 0;
+    transition: all 0.5s ease 0s; min-height:330px;
+}
+.serviceBox2:hover .description2{
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+@media only screen and (max-width:990px){
+    .serviceBox2{ margin-bottom: 30px; }
+}
+
+.Services h6 {
+  font-size:18px; font-weight:500; line-height:30px; margin:50px 0;
+}
+.servicebtn {color:#4056a1;background:transparent;border-width:2px;border-style: solid;border-color: #4056a1;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center; font-weight:bold}
+.servicebtn:before, .servicebtn:after {content:'';display:block;position:absolute;border-color:#4056a1;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
+.servicebtn:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+.servicebtn:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+.servicebtn:hover:before, .servicebtn:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#4056a1}
+.servicebtn:hover {color:#fff;background-color:#4056a1;border-color:#4056a1}
+.ContactUs input[type="text"], .ContactUs input[type="email"]{
+    display: inline-block;
+    height: 40px;
+    width:100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 140px;
+    transition: all 0.1s ease-out;
+  }
+  .ContactUs .form-group {
+    position:relative;
+  }
+
+  .ContactUs input[type="text"] + label, .ContactUs input[type="email"] + label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px 0 0 3px;
+    padding: 0 20px; width:120px;
+    background: #4056a1;
+    transform: translateZ(0) translateX(0);
+  }
+
+  .ContactUs textarea{
+      display: inline-block;
+      width:100%;
+      height: 100px;
+      box-sizing: border-box;
+      outline: none;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      padding: 10px 10px 10px 140px;
+      transition: all 0.1s ease-out;
+    }
+
+    .ContactUs textarea + label{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      line-height: 90px;
+      color: white;
+      border-radius: 3px 0 0 3px;
+      padding: 0 20px; width:120px;
+      background: #4056a1;
+      transform: translateZ(0) translateX(0);
+    }
+    #map {
+            height: 350px; overflow:hidden; padding:20px;
+          }
+
+.Addresses {
+  background-color:rgba(0, 0, 0, 0.6); padding:50px 0; overflow:hidden;
+}
+.Addresses .india li {
+  line-height:30px;
+}
+.Addresses .india li i {
+  margin-right:15px;
+}
+.Addresses, .Addresses a {
+  color:#fff;
+}
+.Addresses .india li span {
+  display:inline-flex;
+}
+.Addresses hr {
+  background-color:#fff;
+}
+
+.Footer {
+  background-color:#000; overflow:hidden; padding:10px 0;
+}
+.Footer p {
+  font-size:13px; color:#fff; margin-bottom:0px; padding-top:2px;
+}
+.Footer a {
+  margin-right:20px;color:#fff; font-size:13px;
+}
+.Footer a i {
+   transition:all .3s ease;
+}
+.Footer a i:hover {
+  transform:scale(1.5);
+}
+.thankyou {
+  color:#4056a1;
+}
